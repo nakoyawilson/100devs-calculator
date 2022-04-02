@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap");
+
+:root {
+  --font: "Public Sans", sans-serif;
+  --black: rgb(25, 25, 25);
+  --white: rgb(255, 255, 255);
+}
+
+/* CSS Reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Calculator */
+
+.calc-container {
+  background-color: var(--black);
+  padding: 5rem 3rem 3rem;
+  border-radius: 20px;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.display {
+  background-color: var(--white);
+  width: 100%;
+  text-align: right;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  width: 5rem;
+  height: 5rem;
+}
